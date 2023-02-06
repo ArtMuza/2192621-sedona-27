@@ -124,100 +124,19 @@
     line-height: 1.23;
   }
 
-  &--impression {
-    @media (min-width: $tablet-width) {
-      width: calc(100% - 245px);
-    }
-
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        right: 100%;
-        top: 50%;
-        width: calc((100% - 160px) / 2);
-        height: 1px;
-        background-color: $gray-86;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 280px;
-      }
-    }
-
-    &::after {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 100%;
-        width: 123px;
-        height: 1px;
-        background-color: $gray-86;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 280px;
-      }
-    }
-  }
-
-  &--attraction {
-    @media (min-width: $tablet-width) {
-      width: 400px;
-    }
-
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 100%;
-        width: 123px;
-        height: 1px;
-        background-color: $gray-86;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 280px;
-      }
-    }
-
-    &::after {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 100%;
-        width: 123px;
-        height: 1px;
-        background-color: $gray-86;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 280px;
-      }
-    }
-  }
-
+  &--impression,
+  &--attraction,
   &--emotions {
-    @media (min-width: $tablet-width) {
-      width: 400px;
-    }
-
     &::before {
       @media (min-width: $tablet-width) {
         content: "";
         position: absolute;
-        left: 100%;
+        right: calc(100% + 66px);
         top: 50%;
-        width: 123px;
+        width: calc((100vw - 100% - 120px - 132px) / 2);
+        max-width: 280px;
         height: 1px;
         background-color: $gray-86;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 280px;
       }
     }
 
@@ -226,14 +145,11 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: 100%;
-        width: 123px;
+        left: calc(100% + 66px);
+        width: calc((100vw - 100% - 120px - 132px) / 2);
+        max-width: 280px;
         height: 1px;
         background-color: $gray-86;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 280px;
       }
     }
   }
