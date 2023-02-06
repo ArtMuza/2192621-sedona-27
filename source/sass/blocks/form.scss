@@ -25,7 +25,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 320px;
+    width: 100%;
     border-top: 1px solid $light-gray-90;
     transform: translate(-50%, 0);
 
@@ -126,7 +126,7 @@
 
   &--impression {
     @media (min-width: $tablet-width) {
-      width: 400px;
+      width: calc(100% - 245px);
     }
 
     &::before {
@@ -135,7 +135,7 @@
         position: absolute;
         right: 100%;
         top: 50%;
-        width: 123px;
+        width: calc((100% - 160px) / 2);
         height: 1px;
         background-color: $gray-86;
       }
