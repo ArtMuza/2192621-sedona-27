@@ -3,10 +3,14 @@
 .presentaion {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 48px;
+    padding: 0 200px 48px;
   }
 }
 
@@ -19,6 +23,7 @@
   line-height: 1.44;
   color: $black;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
